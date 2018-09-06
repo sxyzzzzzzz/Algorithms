@@ -17,17 +17,10 @@
  */
 
 
-#include<stdio.h>
- 
+#include <stdio.h>
+#include "util.h"
+
 #define Max_ 10
-// 打印结果
-void Show(int  arr[], int n)
-{
-    int i;
-    for ( i=0; i<n; i++ )
-        printf("%d  ", arr[i]);
-    printf("\n");
-}
  
 // 归并排序中的合并算法
 void Merge(int array[], int left, int m, int right)

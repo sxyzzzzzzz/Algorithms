@@ -18,11 +18,14 @@
 
 
 #include <stdio.h>
+#include "util.h"
 
 int main()
 {
     int A[] = {5,2,4,6,1,3};
     int i, j, k;
+
+    Show(A, sizeof(A)/sizeof(int));
 
     for(j=1; j<sizeof(A)/sizeof(int); j++){
         int key = A[j];
@@ -35,6 +38,5 @@ int main()
         A[i+1] = key;
     }
 
-    for(k=0; k<sizeof(A)/sizeof(int); k++)
-        printf("%d\n", A[k]);
+    Show(A, sizeof(A)/sizeof(int));
 }

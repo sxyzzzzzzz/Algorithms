@@ -17,7 +17,8 @@
  */
 
 #include <stdio.h>
- 
+#include "util.h"
+
 #define MAX_LEN 10
 
 int LEFT(int i)
@@ -33,15 +34,6 @@ int RIGHT(int i)
 int PARENT(i)
 {
     return i/2;
-}
-
-// 打印结果
-void Show(int  arr[], int n)
-{
-    int i;
-    for ( i=0; i<n; i++ )
-        printf("%d  ", arr[i]);
-    printf("\n");
 }
 
 //调整为最大堆

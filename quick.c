@@ -18,17 +18,9 @@
 
 
 #include <stdio.h>
+#include "util.h"
 
 #define MAX_LEN 10
-
-// ´òÓ¡½á¹û
-void Show(int  arr[], int n)
-{
-    int i;
-    for ( i=0; i<n; i++ )
-        printf("%d  ", arr[i]);
-    printf("\n");
-}
 
 int partition(int A[], int start, int end)
 {
