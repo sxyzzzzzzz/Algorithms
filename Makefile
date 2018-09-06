@@ -1,7 +1,8 @@
 objects = $(T).o util.o
+CC=gcc
 
 $(T) : $(objects)
-	cc -o $(T) $(objects)
+	$(CC) -o $(T) $(objects)
 
 $(T).o : util.h
 
